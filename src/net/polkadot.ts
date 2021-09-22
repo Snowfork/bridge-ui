@@ -147,7 +147,7 @@ export default class Polkadot extends Api {
 
       // Here we subscribe to the parachain events
       dispatch(subscribeEvents());
-    } catch (err) {
+    } catch (err: any) {
       console.log('error starting polkadot network', err);
       if (err.message === 'PolkadotJS missing') {
         dispatch(setPolkadotjsMissing());
