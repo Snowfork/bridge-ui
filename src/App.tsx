@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 import { ToastContainer } from 'react-toastify';
 
+import BridgeHealth from './components/BridgeHealth/BridgeHealth';
 import Bridge from './components/Bridge/Bridge';
 import Nav from './components/Nav';
 import Net from './net';
@@ -106,6 +107,7 @@ const BridgeApp = ({ className }: Props) => {
   return (
     <main className={className}>
       <Nav />
+      <BridgeHealth />
       <Bridge />
       <ToastContainer autoClose={10000} />
     </main>
